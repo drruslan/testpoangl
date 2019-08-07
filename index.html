@@ -5,7 +5,8 @@
     <title>Title</title>
 </head>
 <body>
-<h1> Тест по английскому языку</h1>
+<h1> Тест по английскому языку</h1> <img src="english.jpg">
+<button onclick="igraet()" style="width: 400px; height: 50px; font-size: 18px; background: yellowgreen"> Would you like to listen some music, if yes, click on this button, if no just skip this message</button>
 <h2> 1. Could you tell me your surname?</h2>
 <input type="radio" name="vopros1" value="1">Would you like me to spell it?<br>
 <input type="radio" name="vopros1" value="2">Do you like my family name?<br>
@@ -26,10 +27,13 @@
 <input type="radio" name="vopros5" value="1">I bought it.<br>
 <input type="radio" name="vopros5" value="2">For my birthday.<br>
 <input type="radio" name="vopros5" value="3">My uncle was.<br><br>
-
+<audio src="inner_circle_-_bad_boys_muzika_iz_seriala_(zf.fm).mp3"></audio>
 <button onclick="check()" style="width: 150px;height: 75px; font-size: 50px">check</button>
 </body>
 <script>
+    function igraet() {
+        document.getElementsByName("inner_circle_-_bad_boys_muzika_iz_seriala_(zf.fm).mp3").play()
+    }
     function check() {
         vopros1 = document.getElementsByName('vopros1')
         for (number = 0; number < vopros1.length; number++) {
