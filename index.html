@@ -27,12 +27,417 @@
 <input type="radio" name="vopros5" value="1">I bought it.<br>
 <input type="radio" name="vopros5" value="2">For my birthday.<br>
 <input type="radio" name="vopros5" value="3">My uncle was.<br><br>
-<audio src="inner_circle_-_bad_boys_muzika_iz_seriala_(zf.fm).mp3"></audio>
+<audio src="inner_circle_-_bad_boys_muzika_iz_seriala_(zf.fm).mp3" id="145"></audio>
 <button onclick="check()" style="width: 150px;height: 75px; font-size: 50px">check</button>
 </body>
 <script>
     function igraet() {
-        document.getElementsByName("inner_circle_-_bad_boys_muzika_iz_seriala_(zf.fm).mp3").play()
+        document.getElementById('145').play()
+    }
+    function check() {
+        vopros1 = document.getElementsByName('vopros1')
+        for (number = 0; number < vopros1.length; number++) {
+            if (number === 0 && vopros1[number].checked) {
+                vopros1 = true
+                break
+            }
+        }
+
+        vopros2 = document.getElementsByName('vopros2')
+        for (number = 0; number < vopros2.length; number++) {
+            if (number === 1 && vopros2[number].checked) {
+                vopros2 = true
+                break
+            }
+        }
+        vopros3 = document.getElementsByName('vopros3')
+        for (number = 0; number < vopros3.length; number++) {
+            if (number === 2 && vopros3[number].checked) {
+                vopros3 = true
+                break
+            }
+        }
+        vopros4 = document.getElementsByName('vopros4')
+        for (number = 0; number < vopros4.length; number++) {
+            if (number === 2 && vopros4[number].checked) {
+                vopros4 = true
+                break
+            }
+        }
+        vopros5 = document.getElementsByName('vopros5')
+        for (number = 0; number < vopros5.length; number++) {
+            if (number === 0 && vopros5[number].checked ) {
+                vopros5 = true
+                break
+            }
+        }
+        if(vopros1===true&&vopros2===true&&vopros3===true&&vopros4===true&&vopros5===true){
+            alert("Все верно!")
+        } else {
+            alert("Вы допустили ошибки")
+
+        }
+    }
+</script>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> Тест по английскому языку</h1> <img src="english.jpg">
+<button onclick="igraet()" style="width: 400px; height: 50px; font-size: 18px; background: yellowgreen"> Would you like to listen some music, if yes, click on this button, if no just skip this message</button>
+<h2> 1. Could you tell me your surname?</h2>
+<input type="radio" name="vopros1" value="1">Would you like me to spell it?<br>
+<input type="radio" name="vopros1" value="2">Do you like my family name?<br>
+<input type="radio" name="vopros1" value="3">How do I say that?
+<h2>2. This plant looks dead.</h2>
+<input type="radio" name="vopros2" value="1">It's in the garden.<br>
+<input type="radio" name="vopros2" value="2">It only needs some water.<br>
+<input type="radio" name="vopros2" value="3">It's sleeping.
+<h2>3.I hope it doesn't rain.</h2>
+<input type="radio" name="vopros3" value="1">Of course not.<br>
+<input type="radio" name="vopros3" value="2">Will it be wet?<br>
+<input type="radio" name="vopros3" value="3">So do I.
+<h2>4.Are you going to come inside soon?</h2>
+<input type="radio" name="vopros4" value="1">For ever.<br>
+<input type="radio" name="vopros4" value="2">Not long.<br>
+<input type="radio" name="vopros4" value="3">In a minute.
+<h2>5. Who gave you this book, Lucy?</h2>
+<input type="radio" name="vopros5" value="1">I bought it.<br>
+<input type="radio" name="vopros5" value="2">For my birthday.<br>
+<input type="radio" name="vopros5" value="3">My uncle was.<br><br>
+<audio src="inner_circle_-_bad_boys_muzika_iz_seriala_(zf.fm).mp3" id="145"></audio>
+<button onclick="check()" style="width: 150px;height: 75px; font-size: 50px">check</button>
+</body>
+<script>
+    function igraet() {
+        document.getElementById('145').play()
+    }
+    function check() {
+        vopros1 = document.getElementsByName('vopros1')
+        for (number = 0; number < vopros1.length; number++) {
+            if (number === 0 && vopros1[number].checked) {
+                vopros1 = true
+                break
+            }
+        }
+
+        vopros2 = document.getElementsByName('vopros2')
+        for (number = 0; number < vopros2.length; number++) {
+            if (number === 1 && vopros2[number].checked) {
+                vopros2 = true
+                break
+            }
+        }
+        vopros3 = document.getElementsByName('vopros3')
+        for (number = 0; number < vopros3.length; number++) {
+            if (number === 2 && vopros3[number].checked) {
+                vopros3 = true
+                break
+            }
+        }
+        vopros4 = document.getElementsByName('vopros4')
+        for (number = 0; number < vopros4.length; number++) {
+            if (number === 2 && vopros4[number].checked) {
+                vopros4 = true
+                break
+            }
+        }
+        vopros5 = document.getElementsByName('vopros5')
+        for (number = 0; number < vopros5.length; number++) {
+            if (number === 0 && vopros5[number].checked ) {
+                vopros5 = true
+                break
+            }
+        }
+        if(vopros1===true&&vopros2===true&&vopros3===true&&vopros4===true&&vopros5===true){
+            alert("Все верно!")
+        } else {
+            alert("Вы допустили ошибки")
+
+        }
+    }
+</script>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> Тест по английскому языку</h1> <img src="english.jpg">
+<button onclick="igraet()" style="width: 400px; height: 50px; font-size: 18px; background: yellowgreen"> Would you like to listen some music, if yes, click on this button, if no just skip this message</button>
+<h2> 1. Could you tell me your surname?</h2>
+<input type="radio" name="vopros1" value="1">Would you like me to spell it?<br>
+<input type="radio" name="vopros1" value="2">Do you like my family name?<br>
+<input type="radio" name="vopros1" value="3">How do I say that?
+<h2>2. This plant looks dead.</h2>
+<input type="radio" name="vopros2" value="1">It's in the garden.<br>
+<input type="radio" name="vopros2" value="2">It only needs some water.<br>
+<input type="radio" name="vopros2" value="3">It's sleeping.
+<h2>3.I hope it doesn't rain.</h2>
+<input type="radio" name="vopros3" value="1">Of course not.<br>
+<input type="radio" name="vopros3" value="2">Will it be wet?<br>
+<input type="radio" name="vopros3" value="3">So do I.
+<h2>4.Are you going to come inside soon?</h2>
+<input type="radio" name="vopros4" value="1">For ever.<br>
+<input type="radio" name="vopros4" value="2">Not long.<br>
+<input type="radio" name="vopros4" value="3">In a minute.
+<h2>5. Who gave you this book, Lucy?</h2>
+<input type="radio" name="vopros5" value="1">I bought it.<br>
+<input type="radio" name="vopros5" value="2">For my birthday.<br>
+<input type="radio" name="vopros5" value="3">My uncle was.<br><br>
+<audio src="inner_circle_-_bad_boys_muzika_iz_seriala_(zf.fm).mp3" id="145"></audio>
+<button onclick="check()" style="width: 150px;height: 75px; font-size: 50px">check</button>
+</body>
+<script>
+    function igraet() {
+        document.getElementById('145').play()
+    }
+    function check() {
+        vopros1 = document.getElementsByName('vopros1')
+        for (number = 0; number < vopros1.length; number++) {
+            if (number === 0 && vopros1[number].checked) {
+                vopros1 = true
+                break
+            }
+        }
+
+        vopros2 = document.getElementsByName('vopros2')
+        for (number = 0; number < vopros2.length; number++) {
+            if (number === 1 && vopros2[number].checked) {
+                vopros2 = true
+                break
+            }
+        }
+        vopros3 = document.getElementsByName('vopros3')
+        for (number = 0; number < vopros3.length; number++) {
+            if (number === 2 && vopros3[number].checked) {
+                vopros3 = true
+                break
+            }
+        }
+        vopros4 = document.getElementsByName('vopros4')
+        for (number = 0; number < vopros4.length; number++) {
+            if (number === 2 && vopros4[number].checked) {
+                vopros4 = true
+                break
+            }
+        }
+        vopros5 = document.getElementsByName('vopros5')
+        for (number = 0; number < vopros5.length; number++) {
+            if (number === 0 && vopros5[number].checked ) {
+                vopros5 = true
+                break
+            }
+        }
+        if(vopros1===true&&vopros2===true&&vopros3===true&&vopros4===true&&vopros5===true){
+            alert("Все верно!")
+        } else {
+            alert("Вы допустили ошибки")
+
+        }
+    }
+</script>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> Тест по английскому языку</h1> <img src="english.jpg">
+<button onclick="igraet()" style="width: 400px; height: 50px; font-size: 18px; background: yellowgreen"> Would you like to listen some music, if yes, click on this button, if no just skip this message</button>
+<h2> 1. Could you tell me your surname?</h2>
+<input type="radio" name="vopros1" value="1">Would you like me to spell it?<br>
+<input type="radio" name="vopros1" value="2">Do you like my family name?<br>
+<input type="radio" name="vopros1" value="3">How do I say that?
+<h2>2. This plant looks dead.</h2>
+<input type="radio" name="vopros2" value="1">It's in the garden.<br>
+<input type="radio" name="vopros2" value="2">It only needs some water.<br>
+<input type="radio" name="vopros2" value="3">It's sleeping.
+<h2>3.I hope it doesn't rain.</h2>
+<input type="radio" name="vopros3" value="1">Of course not.<br>
+<input type="radio" name="vopros3" value="2">Will it be wet?<br>
+<input type="radio" name="vopros3" value="3">So do I.
+<h2>4.Are you going to come inside soon?</h2>
+<input type="radio" name="vopros4" value="1">For ever.<br>
+<input type="radio" name="vopros4" value="2">Not long.<br>
+<input type="radio" name="vopros4" value="3">In a minute.
+<h2>5. Who gave you this book, Lucy?</h2>
+<input type="radio" name="vopros5" value="1">I bought it.<br>
+<input type="radio" name="vopros5" value="2">For my birthday.<br>
+<input type="radio" name="vopros5" value="3">My uncle was.<br><br>
+<audio src="inner_circle_-_bad_boys_muzika_iz_seriala_(zf.fm).mp3" id="145"></audio>
+<button onclick="check()" style="width: 150px;height: 75px; font-size: 50px">check</button>
+</body>
+<script>
+    function igraet() {
+        document.getElementById('145').play()
+    }
+    function check() {
+        vopros1 = document.getElementsByName('vopros1')
+        for (number = 0; number < vopros1.length; number++) {
+            if (number === 0 && vopros1[number].checked) {
+                vopros1 = true
+                break
+            }
+        }
+
+        vopros2 = document.getElementsByName('vopros2')
+        for (number = 0; number < vopros2.length; number++) {
+            if (number === 1 && vopros2[number].checked) {
+                vopros2 = true
+                break
+            }
+        }
+        vopros3 = document.getElementsByName('vopros3')
+        for (number = 0; number < vopros3.length; number++) {
+            if (number === 2 && vopros3[number].checked) {
+                vopros3 = true
+                break
+            }
+        }
+        vopros4 = document.getElementsByName('vopros4')
+        for (number = 0; number < vopros4.length; number++) {
+            if (number === 2 && vopros4[number].checked) {
+                vopros4 = true
+                break
+            }
+        }
+        vopros5 = document.getElementsByName('vopros5')
+        for (number = 0; number < vopros5.length; number++) {
+            if (number === 0 && vopros5[number].checked ) {
+                vopros5 = true
+                break
+            }
+        }
+        if(vopros1===true&&vopros2===true&&vopros3===true&&vopros4===true&&vopros5===true){
+            alert("Все верно!")
+        } else {
+            alert("Вы допустили ошибки")
+
+        }
+    }
+</script>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> Тест по английскому языку</h1> <img src="english.jpg">
+<button onclick="igraet()" style="width: 400px; height: 50px; font-size: 18px; background: yellowgreen"> Would you like to listen some music, if yes, click on this button, if no just skip this message</button>
+<h2> 1. Could you tell me your surname?</h2>
+<input type="radio" name="vopros1" value="1">Would you like me to spell it?<br>
+<input type="radio" name="vopros1" value="2">Do you like my family name?<br>
+<input type="radio" name="vopros1" value="3">How do I say that?
+<h2>2. This plant looks dead.</h2>
+<input type="radio" name="vopros2" value="1">It's in the garden.<br>
+<input type="radio" name="vopros2" value="2">It only needs some water.<br>
+<input type="radio" name="vopros2" value="3">It's sleeping.
+<h2>3.I hope it doesn't rain.</h2>
+<input type="radio" name="vopros3" value="1">Of course not.<br>
+<input type="radio" name="vopros3" value="2">Will it be wet?<br>
+<input type="radio" name="vopros3" value="3">So do I.
+<h2>4.Are you going to come inside soon?</h2>
+<input type="radio" name="vopros4" value="1">For ever.<br>
+<input type="radio" name="vopros4" value="2">Not long.<br>
+<input type="radio" name="vopros4" value="3">In a minute.
+<h2>5. Who gave you this book, Lucy?</h2>
+<input type="radio" name="vopros5" value="1">I bought it.<br>
+<input type="radio" name="vopros5" value="2">For my birthday.<br>
+<input type="radio" name="vopros5" value="3">My uncle was.<br><br>
+<audio src="inner_circle_-_bad_boys_muzika_iz_seriala_(zf.fm).mp3" id="145"></audio>
+<button onclick="check()" style="width: 150px;height: 75px; font-size: 50px">check</button>
+</body>
+<script>
+    function igraet() {
+        document.getElementById('145').play()
+    }
+    function check() {
+        vopros1 = document.getElementsByName('vopros1')
+        for (number = 0; number < vopros1.length; number++) {
+            if (number === 0 && vopros1[number].checked) {
+                vopros1 = true
+                break
+            }
+        }
+
+        vopros2 = document.getElementsByName('vopros2')
+        for (number = 0; number < vopros2.length; number++) {
+            if (number === 1 && vopros2[number].checked) {
+                vopros2 = true
+                break
+            }
+        }
+        vopros3 = document.getElementsByName('vopros3')
+        for (number = 0; number < vopros3.length; number++) {
+            if (number === 2 && vopros3[number].checked) {
+                vopros3 = true
+                break
+            }
+        }
+        vopros4 = document.getElementsByName('vopros4')
+        for (number = 0; number < vopros4.length; number++) {
+            if (number === 2 && vopros4[number].checked) {
+                vopros4 = true
+                break
+            }
+        }
+        vopros5 = document.getElementsByName('vopros5')
+        for (number = 0; number < vopros5.length; number++) {
+            if (number === 0 && vopros5[number].checked ) {
+                vopros5 = true
+                break
+            }
+        }
+        if(vopros1===true&&vopros2===true&&vopros3===true&&vopros4===true&&vopros5===true){
+            alert("Все верно!")
+        } else {
+            alert("Вы допустили ошибки")
+
+        }
+    }
+</script>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> Тест по английскому языку</h1> <img src="english.jpg">
+<button onclick="igraet()" style="width: 400px; height: 50px; font-size: 18px; background: yellowgreen"> Would you like to listen some music, if yes, click on this button, if no just skip this message</button>
+<h2> 1. Could you tell me your surname?</h2>
+<input type="radio" name="vopros1" value="1">Would you like me to spell it?<br>
+<input type="radio" name="vopros1" value="2">Do you like my family name?<br>
+<input type="radio" name="vopros1" value="3">How do I say that?
+<h2>2. This plant looks dead.</h2>
+<input type="radio" name="vopros2" value="1">It's in the garden.<br>
+<input type="radio" name="vopros2" value="2">It only needs some water.<br>
+<input type="radio" name="vopros2" value="3">It's sleeping.
+<h2>3.I hope it doesn't rain.</h2>
+<input type="radio" name="vopros3" value="1">Of course not.<br>
+<input type="radio" name="vopros3" value="2">Will it be wet?<br>
+<input type="radio" name="vopros3" value="3">So do I.
+<h2>4.Are you going to come inside soon?</h2>
+<input type="radio" name="vopros4" value="1">For ever.<br>
+<input type="radio" name="vopros4" value="2">Not long.<br>
+<input type="radio" name="vopros4" value="3">In a minute.
+<h2>5. Who gave you this book, Lucy?</h2>
+<input type="radio" name="vopros5" value="1">I bought it.<br>
+<input type="radio" name="vopros5" value="2">For my birthday.<br>
+<input type="radio" name="vopros5" value="3">My uncle was.<br><br>
+<audio src="inner_circle_-_bad_boys_muzika_iz_seriala_(zf.fm).mp3" id="145"></audio>
+<button onclick="check()" style="width: 150px;height: 75px; font-size: 50px">check</button>
+</body>
+<script>
+    function igraet() {
+        document.getElementById('145').play()
     }
     function check() {
         vopros1 = document.getElementsByName('vopros1')
